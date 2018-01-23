@@ -65,24 +65,37 @@ function numWords(word) {
 console.log(numWords(sentence));
 
 // Write a function to test if a string contains a word, and returns a boolean value.
-function containsWord(str) {
-    str.splice(' ')
-    for(in)
+function contains(str, word) { 
+    let result = str.indexOf(word) !== -1;
+    return result;
+    
 };
-
 
 // Pass a phrase and a string to your function to determine that it works.
 // Log the result.
+console.log("hello", "hello");
 
 /* ******************** Loops ******************* */
 // Create an array of 40 students by looping through the numbers 1 through 40.
 // Hint: create an empty array to start.
+let students = [];
+for(let i = 1; i <= 40; i++) {
+    students.push('student ' + i)
+}
 
 
 // Log your array of students
+console.log(students);
+
 
 // Add "(I like programming)" to the end of each student whose number is divisible by 10
 // Remeber that JavaScript starts indexing at *0*
+for(let i = 1; i <= 40; i++) {
+    if(i % 10 === 0) {
+        students[i -1] +=' I like programming';
+    }
+}
+console.log(students);
 
 
 // Log your array of students (again)
